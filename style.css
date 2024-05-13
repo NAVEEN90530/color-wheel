@@ -1,0 +1,353 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #333;
+}
+
+nav {
+    background-color: #666;
+    padding: 10px 0;
+    text-align: center;
+    top: 0;
+    position: sticky;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+main {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    background-color: #333;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+section {
+    margin-bottom: 30px;
+    background-color: #333;
+    text-align: center;
+    padding: 5px;
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(255, 253, 253, 0.1);
+}
+
+h2,h4 {
+    color: whitesmoke;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    background-color: #333;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropbtn {
+    font-size: 16px;
+    border: none;
+    outline: none;
+    padding: 14px 16px;
+    background-color: inherit;
+    margin: 0;
+}
+
+
+.color-info {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.color-box {
+    width: 200px;
+    height: 250px;
+    margin-right: 10px;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+}
+
+.COLOR-MAIN {
+    width: 150px;
+    height: 150px;
+    margin-right: 10px;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+}
+
+.CON {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.RADIAL1 {
+    background: conic-gradient(at center,
+            #FF0000 0deg 30deg,
+            #FF8000 30deg 60deg,
+            #FFFF00 60deg 90deg,
+            #80FF00 90deg 120deg,
+            #00FF00 120deg 150deg,
+            #00FF80 150deg 180deg,
+            #00FFFF 180deg 210deg,
+            #0080FF 210deg 240deg,
+            #0000FF 240deg 270deg,
+            #8000FF 270deg 300deg,
+            #FF00FF 300deg 330deg,
+            #FF0080 330deg 360deg);
+}
+
+.RADIAL2 {
+    background: conic-gradient(at center,
+            #FE2712 0deg 30deg,
+            #FC600A 30deg 60deg,
+            #FB9902 60deg 90deg,
+            #FCCC1A 90deg 120deg,
+            #FEFE33 120deg 150deg,
+            #B2D732 150deg 180deg,
+            #66B032 180deg 210deg,
+            #347C98 210deg 240deg,
+            #0247FE 240deg 270deg,
+            #4424D6 270deg 300deg,
+            #8601AF 300deg 330deg,
+            #C21460 330deg 360deg);
+}
+
+.RADIAL3 {
+    background: conic-gradient(at center,
+            #00FFFF 0deg 30deg,
+            #0080FF 30deg 60deg,
+            #0000FF 60deg 90deg,
+            #8000FF 90deg 120deg,
+            #FF00FF 120deg 150deg,
+            #FF0080 150deg 180deg,
+            #FF0000 180deg 210deg,
+            #FF8000 210deg 240deg,
+            #FFFF00 240deg 270deg,
+            #80FF00 270deg 300deg,
+            #00FF00 300deg 330deg,
+            #00FF80 330deg 360deg);
+}
+
+.RADIAL1,
+.RADIAL2,
+.RADIAL3 {
+    height: 300px;
+    width: 300px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 15px
+}
+
+.hide {
+    height: 210px;
+    width: 210px;
+    background-color: #333;
+    border-radius: 50%;
+}
+
+
+
+.COLOR-SHOW {
+    width: 75px;
+    height: 75px;
+    margin-right: 10px;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+}
+
+p {
+    line-height: 1.6;
+}
+
+.primary-colors {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.secondary-colors,
+.tertiary-colors,
+.main-colors {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.primary-colors .color-box,
+.secondary-colors .color-box,
+.tertiary-colors .color-box,
+.main-colors .color-box {
+    margin: 10px;
+}
+
+@media screen and (max-width: 480px) {
+    .color-box {
+        width:80%;
+        display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin-bottom: 10px;
+    }
+
+    .CON {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+    .RADIAL1,
+    .RADIAL2,
+    .RADIAL3 {
+        height: 200px;
+        width: 200px;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 15px
+    }
+
+    .hide {
+        height: 120px;
+        width: 120px;
+        background-color: #333;
+        border-radius: 50%;
+    }
+
+    .main-colors{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .COLOR-SHOW {
+        height: 50px;
+        width: 50px;
+        margin-right: 10px;
+        border-radius: 4px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 5px;
+    }
+    nav{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+}
+
+
+h1 {
+    text-align: center;
+    color: #fff;
+    margin-top: 30px;
+}
+
+#colorContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.colorSquare {
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+    border: 2px solid #fff;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: border-color 0.3s ease;
+    cursor: pointer;
+}
+
+.colorCode {
+    font-size: 12px;
+    color: white;
+}
+
+#schemeContainer {
+    text-align: center;
+    margin-top: 20px;
+}
+
+#schemeContainer label {
+    margin-right: 20px;
+    color: white;
+    cursor: pointer;
+}
+
+#outputContainer {
+    margin-top: 30px;
+    text-align: center;
+}
+
+#outputContainer span {
+    display: inline-block;
+    margin: 5px;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+#outputContainer span:hover {
+    transform: scale(1.1);
+}

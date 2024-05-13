@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>RGB Color Selector</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+    <nav>
+        <ul>
+            <li><a href="./index.html#rgb">RGB Color Model</a></li>
+            <li><a href="./index.html#ryb">RYB Color Model</a></li>
+            <li><a href="./index.html#cmyk">CMYK Color Model</a></li>
+            <li class="dropdown">
+                <a href="#" class="dropbtn">Color Generator</a>
+                <div class="dropdown-content">
+                    <a href="./RGB color selector.html">RGB Color Selector</a>
+                    <a href="./RYB Color Selector.html">RYB Color Selector</a>
+                    <a href="./CMYK Color Selector.html">CMYK Color Selector</a>
+                </div>
+            </li>
+        </ul>
+    </nav>
+    
+<h1>RGB Color Selector</h1>
+
+<div id="colorContainer">
+    <!-- Color squares will be dynamically added here -->
+</div>
+
+<div id="schemeContainer">
+    <label><input type="radio" name="scheme" value="complementary" checked> Complementary</label>
+    <label><input type="radio" name="scheme" value="triadic"> Triadic</label>
+    <label><input type="radio" name="scheme" value="compound"> Compound (Split Complementary)</label>
+    <label><input type="radio" name="scheme" value="analogous"> Analogous</label>
+</div>
+
+<div id="outputContainer">
+    <!-- Output colors will be displayed here -->
+</div>
+
+<script src="RGB Color Selector.js"></script>
+</body>
+</html>
